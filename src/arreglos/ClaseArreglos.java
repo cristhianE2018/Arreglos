@@ -58,4 +58,22 @@ public class ClaseArreglos {
                 }
             }
         }
+        
+        //Método para encontrar el numero mayor
+        public int getMayor(){
+            int mayor=0;
+            for(int i=0;  i<=this.array.length-1;  i++){
+                mayor = (this.array[i] > mayor) ? this.array[i] : mayor;
+            }
+            return mayor;
+        }
+        
+        //Método para encontrar el numero menor
+        public int getMenor(){
+            int menor=this.array[0];
+            for(int i=1; i<=this.array.length-1; i++){
+                  menor = (this.array[i] < menor) ? this.array[i] : menor;
+            }
+            return menor;
+        }
 }

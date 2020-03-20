@@ -23,6 +23,9 @@ public class Arreglos {
         MiArray.mostrarArray();
         MiArray.OrdenarDescendentemente();
         MiArray.mostrarArray();
+        System.out.printf("El numero mayor del arreglo es el %d",MiArray.getMayor());
+        System.out.println("");
+         System.out.printf("El numero menor del arreglo es el %d",MiArray.getMenor());
     }
     
 }
