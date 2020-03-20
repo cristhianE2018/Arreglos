@@ -19,6 +19,8 @@ public class Arreglos {
             MiArray.Agregar(i, lee.nextInt());
         }
         MiArray.mostrarArray();
+        MiArray.OrdenarAscendente();
+        MiArray.mostrarArray();
     }
     
 }
