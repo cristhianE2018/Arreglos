@@ -21,6 +21,8 @@ public class Arreglos {
         MiArray.mostrarArray();
         MiArray.OrdenarAscendente();
         MiArray.mostrarArray();
+        MiArray.OrdenarDescendentemente();
+        MiArray.mostrarArray();
     }
     
 }
