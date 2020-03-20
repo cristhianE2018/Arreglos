@@ -44,4 +44,18 @@ public class ClaseArreglos {
                 }
             }
         }
+        
+        //Método para ordenar vector descendentemente
+        public void OrdenarDescendentemente(){
+            int aux;
+            for(int i=0; i<this.array.length-1; i++){
+                for(int j=0; j<this.array.length-1; j++){
+                    if(this.array[j] < this.array[j+1]){
+                        aux = this.array[j];
+                        this.array[j] = this.array[j+1];
+                        this.array[j+1] = aux;
+                    }
+                }
+            }
+        }
 }
