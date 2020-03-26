@@ -1,31 +1,27 @@
 package arreglos;
 import java.util.Scanner;
 import arreglos.ClaseArreglos;
-/**
- *
- * @author crist
- */
-public class Arreglos {
 
-    /**
-     * @param args the command line arguments
-     */
+public class Arreglos {
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner lee = new Scanner(System.in);
-        ClaseArreglos MiArray = new ClaseArreglos(4);
+        int tamanio;
+        System.out.println("Ingresa el tamaño del arreglo: ");
+        tamanio = lee.nextInt();
+        ClaseArreglos MiArray = new ClaseArreglos(tamanio);
         for(int i=0; i<=MiArray.getTamanio()-1; i++){
             System.out.printf("Ingresa valor en la posicion %d : ",i);
             MiArray.Agregar(i, lee.nextInt());
         }
         MiArray.mostrarArray();
+        System.out.println((MiArray.isCapicua()) ? "Es capicua" : "No es capicua");
         MiArray.OrdenarAscendente();
         MiArray.mostrarArray();
         MiArray.OrdenarDescendentemente();
         MiArray.mostrarArray();
         System.out.printf("El numero mayor del arreglo es el %d",MiArray.getMayor());
         System.out.println("");
-         System.out.printf("El numero menor del arreglo es el %d",MiArray.getMenor());
+        System.out.printf("El numero menor del arreglo es el %d",MiArray.getMenor());
     }
     
 }
